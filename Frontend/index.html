@@ -8,7 +8,10 @@
 	<body>
 		
 		<section id="header">
-			<input type="text" value="http://" />
+            <div>
+			    <input type="text" value="Search" />
+                <button>Find Links</button>
+            </div>
 		</section>
 		
 		<section id="output">
@@ -18,10 +21,22 @@
 				<li class="expanded">
 					<a href="link">User <span>http://url</span></a>
 					<ul>
-						<li><a href="tag1">tag 1</a></li>
-						<li><a href="tag1">tag 2</a></li>
-						<li><a href="tag1">tag 3</a></li>
-						<li><a href="tag1">tag 4</a></li>
+						<li>
+                            <a class="add" href="#">&nbsp;</a>
+                            <a class="link" href="tag1">tag 1</a>
+                        </li>
+						<li>
+                            <a class="add" href="#">&nbsp;</a>
+                            <a class="link" href="tag1">tag 1</a>
+                        </li>
+						<li>
+                            <a class="add" href="#">&nbsp;</a>
+                            <a class="link" href="tag1">tag 1</a>
+                        </li>
+						<li>
+                            <a class="add" href="#">&nbsp;</a>
+                            <a class="link" href="tag1">tag 1</a>
+                        </li>
 					</ul>
 				</li>
 				
@@ -37,12 +52,7 @@
 				
 				<li>
 					<a href="link">User <span>http://url</span></a>
-					<ul>
-						<li><a href="tag1">tag 1</a></li>
-						<li><a href="tag1">tag 2</a></li>
-						<li><a href="tag1">tag 3</a></li>
-						<li><a href="tag1">tag 4</a></li>
-					</ul>
+					
 				</li>
 				
 			</ul>

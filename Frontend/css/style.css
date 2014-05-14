@@ -13,19 +13,36 @@ body{
 	background: #373170;
 	height: 60px;
 	width: 100%;
+    position: relative;
 }
+    #header div{
+		width: 860px;
+		position: absolute;
+		left: 50%;
+		margin: 0 0 0 -430px;
+    }
+
 	#header input{
 		border: 0px;
 		color: #ffff00;
 		outline: none;
 		padding: 20px;
-		width: 860px;
+        width: 100%;
 		font-size: 16px;
 		background: #27224f;
-		position: absolute;
-		left: 50%;
-		margin: 0 0 0 -430px;
 	}
+
+    #header button{
+        border: 2px solid #fff;        
+        width: 100px;
+        color: #fff;
+        height: 40px;
+        background: transparent;
+        opacity: 0.1;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
 
 
 
@@ -69,19 +86,45 @@ body{
         /* Expanded */
         #output ul li.expanded ul{
             display: block;
-            padding: 10px 0 20px 0;
+            padding: 10px 0 40px 0;
         }
 
             #output ul li ul li{
-                padding: 0 10px 0 10px;
+                padding: 0 10px 0 8px;
+                position: relative;
             }
 
-                #output ul li ul li a{
-                    color: #FFF;
+                #output ul li ul li a.add{
+                    position: absolute;
+                    z-index: 1000;
+                    background: #e9dfd7;
+                    margin: 8px 0 0 -13px;
+                    height: 29px;
+                    width: 29px;
+                    padding: 0px;
+                    border-radius: 100px;
+                    border: 3px #f1ece8 solid;
+                }    
+
+                    
+
+                #output ul li ul li a.link{
+                    position: relative;
+                    color: #504a45;
                     font-size: 13px;
-                    background-color: #333;
-			        padding: 12px 0 0 40px;
-                    height: 28px;
+                    background-color: #e9dfd7;
+			        padding: 20px 0 0 40px;
+                    height: 30px;
                 }
 
+            #output ul li ul li:hover a{
+                background: #bdac9f;
+                color: #FFF;
+            }
+
+                #output ul li ul li:hover a.add:hover{
+                    width: 100px;
+                    background: #574c44;
+                    margin-left: -84px;
+                }
 		
