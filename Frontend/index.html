@@ -349,7 +349,8 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script type="text/javascript">
             $(function() { 
-                $('.toggle').click(function(){
+                $('.toggle').click(function(e  ){
+                    e.preventDefault();
                     var parent = $(this).parent();
                     if( $(parent).hasClass('expanded') ){
                         $(parent).removeClass('expanded')
