@@ -21,6 +21,23 @@ body{
         height: 60px;
     }
 
+    #header div.vLine{
+        position: absolute;
+        top: 0;
+        background-image: url( '../assets/LS_Styleguide.png' );
+        background-repeat: no-repeat;
+        background-position: left -400px;
+        height: 60px;
+        width: 6px;
+        z-index: 10000;
+        margin: 0;
+        left: -3px;
+    }
+
+    #header div.vLineRight{
+        left: 857px;
+    }
+
 	#header input{
         background: #27224f;
         background-image: url( '../assets/LS_Styleguide.png' );
