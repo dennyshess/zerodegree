@@ -86,6 +86,40 @@ body{
 
 
 
+/**
+* Add Link Interface
+**/
+
+#addLinkForm{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF000;
+}
+
+    #addLinkForm .loader{
+        color: #a00 !important;
+        display: block;
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        margin-left: -20px;
+        
+        -webkit-animation: load6Black 1.7s infinite ease;
+        animation: load6Black 1.7s infinite ease;
+    }
+
+    #addLinkForm input{
+        background-color: #FFF000;
+        outline: none;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        margin: -40px auto;
+        font-size: 80px;
+        text-align: center;
+        border: 0px;
+    }
 
 
 /**
@@ -325,6 +359,8 @@ body{
   -webkit-animation: load6 1.7s infinite ease;
   animation: load6 1.7s infinite ease;
 }
+
+
 @-webkit-keyframes load6 {
   0% {
     -webkit-transform: rotate(0deg);
@@ -347,6 +383,7 @@ body{
     box-shadow: -0.11em -0.83em 0 -0.4em #ffffff, -0.11em -0.83em 0 -0.42em #ffffff, -0.11em -0.83em 0 -0.44em #ffffff, -0.11em -0.83em 0 -0.46em #ffffff, -0.11em -0.83em 0 -0.477em #ffffff;
   }
 }
+
 @keyframes load6 {
   0% {
     -webkit-transform: rotate(0deg);
@@ -367,5 +404,53 @@ body{
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
     box-shadow: -0.11em -0.83em 0 -0.4em #ffffff, -0.11em -0.83em 0 -0.42em #ffffff, -0.11em -0.83em 0 -0.44em #ffffff, -0.11em -0.83em 0 -0.46em #ffffff, -0.11em -0.83em 0 -0.477em #ffffff;
+  }
+}
+
+
+
+@-webkit-keyframes load6Black {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    box-shadow: -0.11em -0.83em 0 -0.4em #222222, -0.11em -0.83em 0 -0.42em #222222, -0.11em -0.83em 0 -0.44em #222222, -0.11em -0.83em 0 -0.46em #222222, -0.11em -0.83em 0 -0.477em #222222;
+  }
+  5%,
+  95% {
+    box-shadow: -0.11em -0.83em 0 -0.4em #222222, -0.11em -0.83em 0 -0.42em #222222, -0.11em -0.83em 0 -0.44em #222222, -0.11em -0.83em 0 -0.46em #222222, -0.11em -0.83em 0 -0.477em #222222;
+  }
+  30% {
+    box-shadow: -0.11em -0.83em 0 -0.4em #222222, -0.51em -0.66em 0 -0.42em #222222, -0.75em -0.36em 0 -0.44em #222222, -0.83em -0.03em 0 -0.46em #222222, -0.81em 0.21em 0 -0.477em #222222;
+  }
+  55% {
+    box-shadow: -0.11em -0.83em 0 -0.4em #222222, -0.29em -0.78em 0 -0.42em #222222, -0.43em -0.72em 0 -0.44em #222222, -0.52em -0.65em 0 -0.46em #222222, -0.57em -0.61em 0 -0.477em #222222;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    box-shadow: -0.11em -0.83em 0 -0.4em #222222, -0.11em -0.83em 0 -0.42em #222222, -0.11em -0.83em 0 -0.44em #222222, -0.11em -0.83em 0 -0.46em #222222, -0.11em -0.83em 0 -0.477em #222222;
+  }
+}
+
+@keyframes load6Black {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    box-shadow: -0.11em -0.83em 0 -0.4em #222222, -0.11em -0.83em 0 -0.42em #222222, -0.11em -0.83em 0 -0.44em #222222, -0.11em -0.83em 0 -0.46em #222222, -0.11em -0.83em 0 -0.477em #222222;
+  }
+  5%,
+  95% {
+    box-shadow: -0.11em -0.83em 0 -0.4em #222222, -0.11em -0.83em 0 -0.42em #222222, -0.11em -0.83em 0 -0.44em #222222, -0.11em -0.83em 0 -0.46em #222222, -0.11em -0.83em 0 -0.477em #222222;
+  }
+  30% {
+    box-shadow: -0.11em -0.83em 0 -0.4em #222222, -0.51em -0.66em 0 -0.42em #222222, -0.75em -0.36em 0 -0.44em #222222, -0.83em -0.03em 0 -0.46em #222222, -0.81em 0.21em 0 -0.477em #222222;
+  }
+  55% {
+    box-shadow: -0.11em -0.83em 0 -0.4em #222222, -0.29em -0.78em 0 -0.42em #222222, -0.43em -0.72em 0 -0.44em #222222, -0.52em -0.65em 0 -0.46em #222222, -0.57em -0.61em 0 -0.477em #222222;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    box-shadow: -0.11em -0.83em 0 -0.4em #222222, -0.11em -0.83em 0 -0.42em #222222, -0.11em -0.83em 0 -0.44em #222222, -0.11em -0.83em 0 -0.46em #222222, -0.11em -0.83em 0 -0.477em #222222;
   }
 }
