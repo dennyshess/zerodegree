@@ -3,6 +3,9 @@ body{
 	font-family: Helvetica;
 }
 
+
+
+
 /**
 * Input URL Side
 **/
@@ -35,23 +38,22 @@ body{
 	padding: 10px 0 0 0;
 	width: 860px;
 	margin: auto;
-	background: #EFEFEF;
 }
 	
 	#output ul li{
-		background: #FFF;
-		height: 60px;
 	 	margin: 0 0 1px 0;
-		padding: 0 0 0 40px;
 	}
 
 		#output ul li a{
-			display: inline-block;
-			padding: 24px 0 0 0;
+		    background: #FFF;
+			display: block;
+			padding: 24px 0 0 40px;
+			color: #333333;
+            height: 36px;
 			font-size: 16px;	
 			text-decoration: none;
-			color: #333333;
 		}
+
 		#output ul li a span{
 			color: #999999;
 			font-size: 11px;
@@ -59,10 +61,27 @@ body{
 			padding: 0 0 0 24px;
 		}
 
+        /* Collapsed */
+        #output ul li ul{
+            display: none;
+        }
 
-		#output ul li ul li{
-			display: none;
-			padding: 0 0 0 10px;
-		}
+        /* Expanded */
+        #output ul li.expanded ul{
+            display: block;
+            padding: 10px 0 20px 0;
+        }
+
+            #output ul li ul li{
+                padding: 0 10px 0 10px;
+            }
+
+                #output ul li ul li a{
+                    color: #FFF;
+                    font-size: 13px;
+                    background-color: #333;
+			        padding: 12px 0 0 40px;
+                    height: 28px;
+                }
 
 		
