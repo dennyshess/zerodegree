@@ -173,7 +173,6 @@ body{
             /* Collapsed */
             #output ul li ul{
                 opacity: 0;
-                overflow: hidden;
                 max-height: 0px;
                 display: block;
                 padding: 0;
