@@ -14,6 +14,7 @@ body{
 	height: 60px;
 	width: 100%;
     position: fixed;
+    z-index: 10000;
 }
     #header div{
 		width: 860px;
@@ -86,6 +87,7 @@ body{
     **/
 	#output ul li{
 	 	margin: 0 0 1px 0;
+        position: relative;
 	}
 
 		#output ul li a{
@@ -103,12 +105,44 @@ body{
             -webkit-box-shadow: 0 1px 1px #bdac9f;
             box-shadow:         0 1px 1px #bdac9f;
         }
+        
+        #output ul li a.toggle {
+            width: 60px;
+            height: 60px;
+            border: 0px;
+            margin: 0px;
+            padding: 0px;
+            position: absolute;
+            background: transparent;
+            background-image: url('../assets/LS_Styleguide.png');
+            background-repeat: no-repeat;
+            background-position: 23px -174px;
+            right: 0px;
+            top: 0px;
+            display: none;
+        }
+
+        #output ul li.expanded a.toggle{
+            display: block;
+        }
+
+        #output ul li.expanded:hover a.toggle{
+            background-image: url('../assets/LS_Styleguide.png');
+            background-repeat: no-repeat;
+            background-position: 23px -174px;
+        }
 
 		#output ul li a span{
 			color: #d5d5d5;
 			font-size: 11px;
 			display: inline-block;
-			padding: 0 0 0 24px;
+            position: relative;
+            background-image: url('../assets/LS_Styleguide.png');
+            background-repeat: no-repeat;
+            background-position: left -247px;
+			padding: 0 0 0 12px;
+            margin: 0 0 0 12px;
+            top: -2px;
 		}
 
         #output ul li:hover a.mainlink{
@@ -120,6 +154,14 @@ body{
 
             #output ul li:hover a.mainlink span{
                 color: #a3a1b7;
+            }
+
+            #output ul li:hover a.toggle{
+                display: block;
+                background: transparent;
+                background-image: url('../assets/LS_Styleguide.png');
+                background-repeat: no-repeat;
+                background-position: 32px -128px;
             }
 
 
@@ -150,7 +192,7 @@ body{
                 #output ul li.expanded a.mainlink span{
                     color: #a3a1b7;
                 }
-
+    
             #output ul li.expanded ul{
                 display: block;
                 padding: 10px 0 40px 0;
@@ -183,7 +225,8 @@ body{
                         font-size: 11px;
                         font-weight: bold;
                         color: #f1ece8;
-                        padding: 9px;
+                        background: transparent;
+                        padding: 11px;
                         width: 50px;
                         margin-left: 20px;
                     }
