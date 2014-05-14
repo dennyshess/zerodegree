@@ -67,12 +67,18 @@ body{
 		#output ul li a{
 		    background: #FFF;
 			display: block;
-			padding: 24px 0 0 40px;
+			padding: 24px 0 0 20px;
 			color: #333333;
             height: 36px;
 			font-size: 16px;	
 			text-decoration: none;
 		}
+
+        #output ul li a.mainlink{
+            -moz-box-shadow:    0 1px 1px #bdac9f;
+            -webkit-box-shadow: 0 1px 1px #bdac9f;
+            box-shadow:         0 1px 1px #bdac9f;
+        }
 
 		#output ul li a span{
 			color: #d5d5d5;
@@ -104,6 +110,17 @@ body{
             }
 
             /* Expanded */
+            #output ul li.expanded a.mainlink{
+                -moz-box-shadow:    inset 0 0 0 2px #37a6e0;
+                -webkit-box-shadow: inset 0 0 0 2px #37a6e0;
+                box-shadow:         inset 0 0 0 2px #37a6e0;
+                color: #37a6e0;
+            }
+
+                #output ul li.expanded a.mainlink span{
+                    color: #a3a1b7;
+                }
+
             #output ul li.expanded ul{
                 display: block;
                 padding: 10px 0 40px 0;
