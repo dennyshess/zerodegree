@@ -56,7 +56,10 @@ body{
 	width: 860px;
 	margin: auto;
 }
-	
+
+    /**
+    * First Level 
+    **/
 	#output ul li{
 	 	margin: 0 0 1px 0;
 	}
@@ -78,53 +81,70 @@ body{
 			padding: 0 0 0 24px;
 		}
 
-        /* Collapsed */
-        #output ul li ul{
-            display: none;
+        #output ul li:hover a.mainlink{
+            -moz-box-shadow:    inset 0 0 0 2px #37a6e0;
+            -webkit-box-shadow: inset 0 0 0 2px #37a6e0;
+            box-shadow:         inset 0 0 0 2px #37a6e0;
+            color: #37a6e0;
         }
 
-        /* Expanded */
-        #output ul li.expanded ul{
-            display: block;
-            padding: 10px 0 40px 0;
-        }
-
-            #output ul li ul li{
-                padding: 0 10px 0 8px;
-                position: relative;
+            #output ul li:hover a.mainlink span{
+                color: #a3a1b7;
             }
 
-                #output ul li ul li a.add{
-                    position: absolute;
-                    z-index: 1000;
-                    background: #e9dfd7;
-                    margin: 8px 0 0 -13px;
-                    height: 29px;
-                    width: 29px;
-                    padding: 0px;
-                    border-radius: 100px;
-                    border: 3px #f1ece8 solid;
-                }    
 
-                    
 
-                #output ul li ul li a.link{
+
+        /**
+        * Second Level 
+        **/
+            /* Collapsed */
+            #output ul li ul{
+                display: none;
+            }
+
+            /* Expanded */
+            #output ul li.expanded ul{
+                display: block;
+                padding: 10px 0 40px 0;
+            }
+
+                #output ul li ul li{
+                    padding: 0 10px 0 8px;
                     position: relative;
-                    color: #504a45;
-                    font-size: 13px;
-                    background-color: #e9dfd7;
-			        padding: 20px 0 0 40px;
-                    height: 30px;
                 }
 
-            #output ul li ul li:hover a{
-                background: #bdac9f;
-                color: #FFF;
-            }
+                    #output ul li ul li a.add{
+                        position: absolute;
+                        z-index: 1000;
+                        background: #e9dfd7;
+                        margin: 8px 0 0 -13px;
+                        height: 29px;
+                        width: 29px;
+                        padding: 0px;
+                        border-radius: 100px;
+                        border: 3px #f1ece8 solid;
+                    }    
 
-                #output ul li ul li:hover a.add:hover{
-                    width: 100px;
-                    background: #574c44;
-                    margin-left: -84px;
+
+
+                    #output ul li ul li a.link{
+                        position: relative;
+                        color: #504a45;
+                        font-size: 13px;
+                        background-color: #e9dfd7;
+                        padding: 20px 0 0 40px;
+                        height: 30px;
+                    }
+
+                #output ul li ul li:hover a{
+                    background: #bdac9f;
+                    color: #FFF;
                 }
+
+                    #output ul li ul li:hover a.add:hover{
+                        width: 100px;
+                        background: #574c44;
+                        margin-left: -84px;
+                    }
 		
