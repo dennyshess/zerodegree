@@ -1,25 +1,27 @@
-section{
-	width: 40%;
-	float: left;
-	height: 100%;
-	padding: 5%;
+body{
+	background: #f1ece8;
+	font-family: Helvetica;
 }
-
-
-
 
 /**
 * Input URL Side
 **/
-#input{
-	background: #CDCDCD;
+#header{
+	background: #373170;
+	height: 60px;
+	width: 100%;
 }
-	#input input{
+	#header input{
 		border: 0px;
+		color: #ffff00;
 		outline: none;
-		padding: 3%;
-		width: 100%;
-		font-size: 1.2em;
+		padding: 20px;
+		width: 860px;
+		font-size: 16px;
+		background: #27224f;
+		position: absolute;
+		left: 50%;
+		margin: 0 0 0 -430px;
 	}
 
 
@@ -30,12 +32,37 @@ section{
 * Output Link List site
 **/
 #output{
+	padding: 10px 0 0 0;
+	width: 860px;
+	margin: auto;
 	background: #EFEFEF;
 }
+	
 	#output ul li{
-		padding: 10px 0 20px 10px;
+		background: #FFF;
+		height: 60px;
+	 	margin: 0 0 1px 0;
+		padding: 0 0 0 40px;
 	}
 
-	#output ul li ul li{
-		padding: 0 0 0 10px;
-	}
+		#output ul li a{
+			display: inline-block;
+			padding: 24px 0 0 0;
+			font-size: 16px;	
+			text-decoration: none;
+			color: #333333;
+		}
+		#output ul li a span{
+			color: #999999;
+			font-size: 11px;
+			display: inline-block;
+			padding: 0 0 0 24px;
+		}
+
+
+		#output ul li ul li{
+			display: none;
+			padding: 0 0 0 10px;
+		}
+
+		
