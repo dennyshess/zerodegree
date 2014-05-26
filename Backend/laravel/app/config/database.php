@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql',
+	'default' => 'mongodb',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -82,6 +82,15 @@ return array(
 			'password' => '',
 			'prefix'   => '',
 		),
+
+		'mongodb' => array(
+		    'driver'   => 'mongodb',
+		    'host'     => 'ds029197.mongolab.com',
+		    'port'     => 29197,
+		    'username' => 'degree01',
+		    'password' => 'jkj9(G)2uJ',
+		    'database' => 'zerodb'
+		),		
 
 	),
 
